@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h2>BHK</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Bath</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bath-3">3</label>
+		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-4">4</label>
+		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label>
+	</div>
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+    <option value="devarachikkanahalli">Devarachikkanahalli</option>
+    <option value="1st block jayanagar">1st Block Jayanagar</option>
+    <option value="1st phase jp nagar">1st Phase JP Nagar</option>
+    <option value="2nd phase judicial layout">2nd Phase Judicial Layout</option>
+    <option value="2nd stage nagarbhavi">2nd Stage Nagarbhavi</option>
+    <option value="5th block hbr layout">5th Block HBR Layout</option>
+    <option value="5th phase jp nagar">5th Phase JP Nagar</option>
+    <option value="6th phase jp nagar">6th Phase JP Nagar</option>
+    <option value="7th phase jp nagar">7th Phase JP Nagar</option>
+    <option value="8th phase jp nagar">8th Phase JP Nagar</option>
+    <option value="9th phase jp nagar">9th Phase JP Nagar</option>
+    <option value="aecs layout">AECS Layout</option>
+    <option value="abbigere">Abbigere</option>
+    <option value="akshaya nagar">Akshaya Nagar</option>
+    <option value="ambalipura">Ambalipura</option>
+    <option value="ambedkar nagar">Ambedkar Nagar</option>
+    <option value="amruthahalli">Amruthahalli</option>
+    <option value="anandapura">Anandapura</option>
+    <option value="ananth nagar">Ananth Nagar</option>
+    <option value="anekal">Anekal</option>
+    <option value="anjanapura">Anjanapura</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
